@@ -1,0 +1,102 @@
+body {
+  color: #212121;
+  padding: 30px 0 30px 0;
+}
+
+.location {
+  margin: 0 auto 20px auto;
+  overflow: auto;
+  border-bottom: 1px solid #EEE;
+  padding-bottom: 15px;
+}
+
+.days {
+  display: flex;
+}
+
+.day {
+  min-width: 160px;
+  max-width: 160px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 10px;
+}
+
+.today {
+  background-color: #fff9c4;
+}
+
+.high-low {
+  font-size: 1.9rem;
+  color: #e0e0e0;
+  padding: 10px 0 0 0;
+  
+}
+
+.text {
+  padding-bottom: 10px;
+}
+
+.day-label {
+  background-color:#eeeeee;
+  color: #616161;
+  font-size: .85rem;
+  padding: 5px 0;
+}
+
+.today .day-label {
+  background-color: #e0e0e0
+}
+
+.date-label {
+  background-color:#f5f5f5;
+  color: #757575;
+  font-size: .65rem;
+  padding: 5px 0;
+}
+
+.today .date-label {
+  background-color: #EEE;
+}
+
+@keyframes showBriefly {
+  0% {
+    transform: translateY(25px) scale(1.5);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translateY(0) scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  75% {
+    opacity: 1;
+  }
+  
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.error {
+  visibility: hidden;
+  animation: 3.5s showBriefly forwards;
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  display: flex;
+  
+}
+
+.error .alert {
+  margin: auto;
+}
