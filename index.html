@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Locations | Weather</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learnwebcode.github.io/weather-checker/custom.css">
+</head>
+<body>
+  
+  <div class="container">
+      <div id="results"></div>
+  
+      <form class="locationForm">
+        <div class="form-row justify-content-center">
+          <div class="col-auto">
+              <input autofocus class="form-control form-control-sm locationField" type="text" placeholder="City, State/Region">
+          </div>
+          <div class="col-auto">
+              <input class="btn btn-primary btn-sm" type="submit" value="Add Location">
+          </div>
+        </div>
+      </form>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="weather-checker.js"></script>
+</body>
+</html>
