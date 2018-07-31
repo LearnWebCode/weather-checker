@@ -35,7 +35,6 @@ body {
   font-size: 1.9rem;
   color: #e0e0e0;
   padding: 10px 0 0 0;
-  
 }
 
 .text {
@@ -94,7 +93,6 @@ body {
   bottom: 30px;
   right: 0;
   display: flex;
-  
 }
 
 .error .alert {
