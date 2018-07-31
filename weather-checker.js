@@ -1,1 +1,1 @@
-// our new JavaScript code goes in this file
+// our new JavaScript code goes in this file :)
